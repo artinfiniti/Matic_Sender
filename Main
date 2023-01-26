@@ -1,21 +1,4 @@
-#include <stdio.h>
-
-int main()
-{
-    int sender_id;
-    int receiver_id;
-
-    printf("Enter Sender ID: "); 
-    scanf("%d", &sender_id);
-
-    printf("Enter Receiver ID: "); 
-    scanf("%d", &receiver_id);
-
-    printf("Sending message from sender %d to receiver %d\n", sender_id, receiver_id); 
-
-    return 0;
-    
-    import smtplib 
+import smtplib 
 # creates SMTP session 
 s = smtplib.SMTP('smtp.gmail.com', 587) 
 # start TLS for security 
